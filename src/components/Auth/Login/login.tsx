@@ -1,12 +1,14 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
-// import styles from './login.scss';
+import styles from './login.module.scss';
 
-function Login() {
+type Props = {};
+
+const Login: React.FC<Props> = props => {
     return (
-    <div>hello
-    <Button color="primary">click</Button>
-    </div>
+        <div className={styles.constainer}>hello
+            <Button color="primary">click</Button>
+        </div>
     );
 }
 
