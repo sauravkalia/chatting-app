@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import styles from './login.module.scss';
+import CustomButton from '../../Shared/CustomButton/customButton';
 
 type Props = {};
 
@@ -66,6 +67,7 @@ const Login: React.FC<Props> = props => {
                     }
                     label="Remember me"
                 />
+                <CustomButton type="submit" onClick={formik.handleSubmit} isPurple title="Login" small={false}/>
             </form>
         </div>
     );
